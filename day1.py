@@ -1,4 +1,4 @@
-from shared import load_data
+from shared import load_data1
 
 
 def day1_aux(dataset):
@@ -57,6 +57,6 @@ def day1_aux2(dataset):
     print(num_zeroes)
 
 def day1():
-    dataset = load_data('data/day1')
+    dataset = load_data1('data/day1')
     day1_aux(dataset)
     day1_aux2(dataset)
