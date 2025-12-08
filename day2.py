@@ -11,7 +11,7 @@ def day2_aux(dataset):
             if strlen % 2 != 0: # can't split in half
                 continue
             if y[0:strlen//2] == y[strlen//2:]:
-                print(y)
+                # print(y)
                 result += x
     print(result)
 
@@ -25,8 +25,7 @@ def day2_aux2(dataset):
                 if strlen % i != 0: # can't split in this many
                     continue
                 if y[0:strlen//i]*i == y:
-                    if i != 2:
-                        print(y)
+                    # print(y)
                     result += x
                     break
     print(result)
