@@ -32,4 +32,3 @@ def day2_aux2(dataset):
 def day2():
     dataset = load_data2('data/day2')
     day2_aux2(dataset)
-
