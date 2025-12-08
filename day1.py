@@ -1,5 +1,6 @@
 from shared import load_data1
 
+# combinations for a safe that cross zero
 
 def day1_aux(dataset):
     num_zeroes = 0

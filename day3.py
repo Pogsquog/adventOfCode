@@ -1,5 +1,6 @@
 from shared import load_data1
 
+# highest values from an ordered list
 
 def day3_aux(dataset):
     result = 0

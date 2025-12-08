@@ -1,5 +1,7 @@
 from shared import load_data2
 
+# repeated numbers
+
 def day2_aux(dataset):
     result = 0
     for item in dataset:
