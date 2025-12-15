@@ -5,7 +5,7 @@ from day3 import day3
 
 if __name__ == '__main__':
     start_time = time.time()
-    day2()
+    day3()
     end_time = time.time()
 
     elapsed_time = end_time - start_time
