@@ -2,10 +2,14 @@ import time
 from day1 import day1
 from day2 import day2
 from day3 import day3
+from day4 import day4
 
 if __name__ == '__main__':
     start_time = time.time()
-    day3()
+    # day1()
+    # day2()
+    # day3()
+    day4()
     end_time = time.time()
 
     elapsed_time = end_time - start_time
