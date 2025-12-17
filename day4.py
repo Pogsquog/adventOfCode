@@ -1,4 +1,6 @@
-from shared import load_data1
+import copy
+
+from shared import load_data1, load_data3
 from typing import List
 
 
@@ -27,7 +29,22 @@ def day4_aux(dataset):
                 num_removable += 1
     print(num_removable)
 
+def day4_aux2(dataset):
+    dataset_new = copy.deepcopy(dataset)
+
+    y_size = len(dataset)
+    x_size = len(dataset[0])
+
+    num_removable = 0
+    for y in range(0, y_size):
+        for x in range(0, x_size):
+            if dataset[y][x] == '@' and count_neighbours(dataset, y, x, y_size, x_size) < 4:
+                num_removable += 1
+                dataset_new[y][x] = '.'
+
+    return num_removable + day4_aux2(dataset_new) if num_removable > 0 else 0
+
 
 def day4():
-    dataset = load_data1('data/day4')
-    day4_aux(dataset)
+    dataset = load_data3('data/day4')
+    print(day4_aux2(dataset))
